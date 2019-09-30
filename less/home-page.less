@@ -58,6 +58,18 @@
       }
 
       .btn {
+         button{
+          width: 100px;
+          height: 40px;
+          border-radius: 10px;
+          .custom-colors(black,white);
+          font-size: 15px;
+          
+          &:hover{
+          .custom-colors(white,black);
+          }
+        }
+       
       }
     }
 
@@ -73,3 +85,54 @@
     }
   }
 }// home
+
+@media @phone {
+
+  .space-images{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: solid blue 3px;
+    width: 300px;
+    height: 150px;
+
+    .sky, .launch{
+      display: none;
+    }
+
+    .blast{
+      border: solid red 1px;
+    }
+  }
+
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    .walk-text{
+      width: 100%;
+
+      h3{
+        width: 500px;
+      }
+
+      p{
+        width: 400px;
+      }
+      
+      .btn {
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      height: 100px;
+      
+      button{
+        width: 100%;
+        font-size: 50px;
+        align-items: stretch;
+      }
+
+      }
+    }
+  }
+}
