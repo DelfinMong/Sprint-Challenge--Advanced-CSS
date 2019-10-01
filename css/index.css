@@ -258,39 +258,42 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .space-images {
+  .home .space-images {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 300px;
-    height: 150px;
   }
-  .space-images .sky,
-  .space-images .launch {
+  .home .space-images .sky,
+  .home .space-images .launch {
     display: none;
   }
-  .walk {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .walk {
     display: flex;
     flex-direction: column-reverse;
   }
-  .walk .walk-text {
+  .home .walk .walk-text {
     width: 100%;
   }
-  .walk .walk-text h3 {
+  .home .walk .walk-text h3 {
     width: 500px;
   }
-  .walk .walk-text p {
+  .home .walk .walk-text p {
     width: 400px;
   }
-  .walk .walk-text .btn {
+  .home .walk .walk-text .btn {
     display: flex;
     justify-content: center;
     width: 400px;
     height: 100px;
   }
-  .walk .walk-text .btn button {
+  .home .walk .walk-text .btn button {
     width: 100%;
-    font-size: 50px;
-    align-items: stretch;
+  }
+  .home .walk img {
+    border: solid red 1px;
+    width: 700px;
   }
 }

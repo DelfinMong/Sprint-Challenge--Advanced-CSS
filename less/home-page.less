@@ -87,20 +87,18 @@
 }// home
 
 @media @phone {
-
+ .home{  // always wrap the parent's container before any child.
   .space-images{
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 300px;
-    height: 150px;
-
+    
     .sky, .launch{
       display: none;
     }
 
     .blast{
-      
+      width: 100%;
     }
   }
 
@@ -127,11 +125,15 @@
       
       button{
         width: 100%;
-        font-size: 50px;
-        align-items: stretch;
       }
 
       }
     }
+
+    img {
+      border: solid red 1px;
+      width: 700px;
+    }
   }
+}
 }
