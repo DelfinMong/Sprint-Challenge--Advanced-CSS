@@ -292,8 +292,8 @@ footer {
   .home .walk .walk-text .btn button {
     width: 100%;
   }
-  .home .walk img {
-    border: solid red 1px;
-    width: 700px;
+  .home .walk .walk-img img {
+    width: 200%;
+    padding-bottom: 15px;
   }
 }
